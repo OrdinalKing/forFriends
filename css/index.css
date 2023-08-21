@@ -108,9 +108,7 @@ header {
 .nav-items {
     display: flex;
     justify-content: space-evenly;
-    padding-bottom: 1rem;
-
-    
+    padding-bottom: 1rem; 
 }
 nav a {
     color: white;
@@ -322,6 +320,7 @@ form {
 .copyright p {
     font-size: 1.6rem;
     padding: 10px;
+    text-align: center;
 }
 
 /* mobile media query */
@@ -342,6 +341,28 @@ form {
         width: 100%;
         padding-right: 8px;
     }
+
+    .nav-items {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 4%;
+    }
+
+    .nav-items a{
+        font-size: 28px;
+    }
+
+    footer nav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer nav a{
+        font-size: 28px;
+    }
+
     /* gallery section */
     .gallery {
         height: auto;
@@ -391,4 +412,5 @@ form {
         padding-top: 2.5vh;
         font-size: 2rem;
     }
+
 }
