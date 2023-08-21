@@ -165,15 +165,9 @@ nav a {
     
 }
 .divide {
-    width: 80%;
-    
-    
+    width: 80%;    
 }
-.divide row {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-}
+
 div .row {
     background-color: black;
     display: flex;
@@ -327,13 +321,27 @@ form {
 
 .copyright p {
     font-size: 1.6rem;
+    padding: 10px;
 }
 
 /* mobile media query */
-@media (max-width: 428px) {
+@media (max-width: 700px) {
     /* header section */
     
+    div .row {
+        display: flex;
+        flex-direction: column;
+    }
 
+    .footer-items {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .email-signup {
+        width: 100%;
+        padding-right: 8px;
+    }
     /* gallery section */
     .gallery {
         height: auto;
